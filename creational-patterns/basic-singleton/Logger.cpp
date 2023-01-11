@@ -10,7 +10,7 @@ Logger &Logger::getInstance()
 
 void Logger::LOG(string msg)
 {
-    m_logFile.open("log.txt", ios::out);
+    m_logFile.open("log.txt", ios::app);
     if (m_logFile)
     {
         m_logFile << msg;
